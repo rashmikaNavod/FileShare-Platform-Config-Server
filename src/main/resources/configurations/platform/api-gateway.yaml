@@ -10,10 +10,10 @@ spring:
               predicates:
                 - Path=/api/v1/users/**
 
-            - id: program-service
-              uri: lb://PROGRAM-SERVICE
+            - id: file-service
+              uri: lb://FILE-SERVICE
               predicates:
-                - Path=/api/v1/programs/**
+                - Path=/api/v1/files/**
 
             - id: enrollment-service
               uri: lb://ENROLLMENT-SERVICE
